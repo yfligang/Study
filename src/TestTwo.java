@@ -25,11 +25,20 @@ public class TestTwo {
             System.out.print(it.next() + " ,");
         }
 
-        System.out.println("================");
+        System.out.println("========1111========");
 
-        //使用remove方法删除集合中的元素
-        it.remove();
-        System.out.println(list);
+        //使用remove方法删除集合中的元素,需要先访问和遍历元素，比如要删除USA
+        Iterator<String> it2 = list.iterator();
+        while (it2.hasNext()){
+            Object obj = it2.next();
+            if ("USA".equals(obj)){
+                it2.remove();
+            }else {
+                System.out.println(obj);
+            }
+
+        }
+
 
 
 
