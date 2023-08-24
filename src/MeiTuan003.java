@@ -8,6 +8,7 @@ public class MeiTuan003 {
 //        meiTuan003.createFile();
 
         try {
+            //可以选择地址，也可以是默认地址
             File file = new File("D:\\JDNetDiskDownload\\F1.txt");
             if (file.createNewFile()){
                 //打印出文件名称
